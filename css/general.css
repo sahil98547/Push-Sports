@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+.primary-heading {
+  font-size: 80px;
+  letter-spacing: 0.7px;
+  line-height: 1.1;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.secondary-heading {
+  font-size: 40px;
+  line-height: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  padding-top: 15px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.subheading {
+  font-size: 28px;
+  color: #999;
+  line-height: 40px;
+}

@@ -1,0 +1,117 @@
+.navigation {
+  height: 90px;
+}
+
+.nav-item {
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.section-featured {
+  padding: 48px 0 48px 0;
+}
+
+.logos img {
+  height: 75px;
+  width: 120px;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee img {
+  display: inline-block;
+  margin-right: 20px;
+  height: 70px;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee img {
+  animation: marquee 3s linear infinite;
+}
+
+.main-how {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.how-img {
+  border-radius: 15px;
+  max-height: 250px;
+  object-fit: cover;
+  min-width: 100%;
+  width: 100%;
+}
+.comb-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.comb-btn a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.125em;
+  background: linear-gradient(180deg, #ee2c30 0, #7d141e 100%);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 2px;
+}
+
+.comb-icons {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.comb-icons a {
+  height: 45px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  border-radius: 2px;
+  color: black;
+  background-color: rgb(168, 168, 181);
+}
+
+/* scholarships push  */
+
+.scholarships-img-section img {
+  display: block;
+  width: 100%;
+}
+
+.scholar-1 {
+  height: 550px;
+}
+
+.scholar-5 {
+  height: 360px;
+}
+
+/* why push*/
+
+/* push-family */
+.push-family {
+  margin-top: 80px;
+}
+
+/* Our Blogs */
+.our-blogs {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
