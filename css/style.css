@@ -103,7 +103,10 @@
   height: 360px;
 }
 
-/* why push*/
+/* OUr locations*/
+.card-section .card {
+  background-color: #3c4142;
+}
 
 /* push-family */
 .push-family {
@@ -114,4 +117,10 @@
 .our-blogs {
   margin-top: 80px;
   margin-bottom: 50px;
+}
+
+/* sharesection */
+.icon {
+  font-size: 30px;
+  border-radius: 50%;
 }

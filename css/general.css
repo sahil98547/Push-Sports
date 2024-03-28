@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: #000;
 }
 
 .primary-heading {
@@ -7,6 +8,7 @@ body {
   letter-spacing: 0.7px;
   line-height: 1.1;
   font-family: "Bebas Neue", sans-serif;
+  color: #fff;
 }
 
 .secondary-heading {
@@ -14,11 +16,13 @@ body {
   line-height: 45px;
   font-family: "Bebas Neue", sans-serif;
   padding-top: 15px;
+  color: #fff;
 }
 
 .sub-title {
   font-size: 16px;
   font-weight: 600;
+  color: #fff;
 }
 
 .description {
@@ -26,10 +30,26 @@ body {
   line-height: 1.5;
   margin-bottom: 25px;
   font-weight: 500;
+  color: #fff;
 }
 
 .subheading {
   font-size: 28px;
   color: #999;
   line-height: 40px;
+  color: #fff;
+}
+
+.footer-para {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.padding-left {
+  padding-left: 60px;
+}
+
+.underline {
+  color: #fff;
 }
