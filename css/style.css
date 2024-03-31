@@ -1,5 +1,22 @@
 .navigation {
   height: 90px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  padding: 10px 60px;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    rgba(23, 26, 38, 0.0001)
+  );
+}
+
+.sticky {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
 }
 
 .nav-item {
@@ -123,4 +140,31 @@
 .icon {
   font-size: 30px;
   border-radius: 50%;
+}
+
+body {
+  position: relative;
+}
+
+.fixed-whatapp {
+  padding: 10px;
+}
+
+.whatsappBtn {
+  font-size: 22px;
+  background: #25ca58;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
