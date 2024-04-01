@@ -125,6 +125,18 @@
   background-color: #3c4142;
 }
 
+.card {
+  height: 160px;
+}
+
+.card img {
+  height: 142px;
+}
+
+/* .card:hover {
+  transform: rotateX(10deg) rotateY(10deg);
+} */
+
 /* push-family */
 .push-family {
   margin-top: 80px;
@@ -137,6 +149,12 @@
 }
 
 /* sharesection */
+
+.shareSection {
+  padding: 20px;
+  background-color: #3c4142;
+}
+
 .icon {
   font-size: 30px;
   border-radius: 50%;
@@ -150,12 +168,26 @@ body {
   padding: 10px;
 }
 
-.whatsappBtn {
+.social-btn {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fixed whatapp icon on bottom right */
+
+.whatsappBtn-fixed {
   font-size: 22px;
   background: #25ca58;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
   position: fixed;
   bottom: 0;
   right: 0;
