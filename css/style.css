@@ -125,10 +125,6 @@
   background-color: #3c4142;
 }
 
-.card {
-  height: 160px;
-}
-
 .card img {
   height: 142px;
 }
@@ -146,6 +142,11 @@
 .our-blogs {
   margin-top: 80px;
   margin-bottom: 50px;
+}
+
+.blog-card {
+  color: #fff;
+  background-color: #3c4142;
 }
 
 /* sharesection */
