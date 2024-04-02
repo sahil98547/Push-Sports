@@ -34,6 +34,10 @@
   height: 75px;
   width: 120px;
 }
+/* section-featured  */
+.section-featured {
+  background-color: #fff;
+}
 
 .marquee {
   white-space: nowrap;

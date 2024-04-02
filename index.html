@@ -233,7 +233,7 @@
       <div class="row">
         <!-- First Card -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Cricket</h5>
@@ -247,7 +247,7 @@
 
         <!-- Second Card -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Badminton</h5>
@@ -261,7 +261,7 @@
 
         <!-- Third Card -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Swimming</h5>
@@ -278,7 +278,7 @@
       <div class="row">
         <!-- First Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Football</h5>
@@ -292,7 +292,7 @@
 
         <!-- Second Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Table Tennis</h5>
@@ -306,7 +306,7 @@
 
         <!-- Third Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Baseball</h5>
@@ -324,7 +324,7 @@
       <div class="row">
         <!-- First Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Basketball</h5>
@@ -338,7 +338,7 @@
 
         <!-- Second Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Chess</h5>
@@ -352,7 +352,7 @@
 
         <!-- Third Card (Duplicate) -->
         <div class="col-lg-4 mb-4">
-          <div class="card your-element">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
             <div class="card-body d-flex align-items-center">
               <div>
                 <h5 class="card-title secondary-heading">Gym</h5>
@@ -368,7 +368,7 @@
         <div class="row">
           <!-- First Card -->
           <div class="col-lg-4 mb-4">
-            <div class="card your-element">
+            <div class="card your-element" data-tilt data-tilt-reverse="true">
               <div class="card-body d-flex align-items-center">
                 <div>
                   <h5 class="card-title secondary-heading">Karate</h5>
@@ -382,7 +382,7 @@
 
           <!-- Second Card -->
           <div class="col-lg-4 mb-4">
-            <div class="card your-element">
+            <div class="card your-element" data-tilt data-tilt-reverse="true">
               <div class="card-body d-flex align-items-center">
                 <div>
                   <h5 class="card-title secondary-heading">Skating</h5>
@@ -396,7 +396,7 @@
 
           <!-- Third Card -->
           <div class="col-lg-4 mb-4">
-            <div class="card your-element">
+            <div class="card your-element" data-tilt data-tilt-reverse="true">
               <div class="card-body d-flex align-items-center">
                 <div>
                   <h5 class="card-title secondary-heading">Taekwondo</h5>
@@ -413,7 +413,7 @@
         <div class="row">
           <!-- First Card (Duplicate) -->
           <div class="col-lg-4 mb-4">
-            <div class="card your-element">
+            <div class="card your-element" data-tilt data-tilt-reverse="true">
               <div class="card-body d-flex align-items-center">
                 <div>
                   <h5 class="card-title secondary-heading">Tennis</h5>
@@ -487,7 +487,7 @@
             <img src="https://pushsports.in/wp-content/uploads/2024/02/career.jpg" class="img-fluid" alt="Image 1">
             <h5 class="mt-3 secondary-heading">
               Careers at Push </h5>
-            <button class="btn btn-danger">Learn More</button>
+            <a class="btn-red" href="#">Learn More</a>
           </div>
         </div>
 
@@ -713,8 +713,10 @@
             const elements = document.querySelectorAll(".your-element");
             elements.forEach(function(element) {
                 VanillaTilt.init(element, {
-                    max: 25,
-                    speed: 400
+                    max:30,
+                    speed: 300,
+  glare: true,
+  'max-glare': 2,
                 });
             });
         });

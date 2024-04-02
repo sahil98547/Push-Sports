@@ -57,3 +57,23 @@ body {
 .mg-top {
   margin-top: 100px;
 }
+
+.btn-red,
+.btn-red:visited,
+.btn-red:link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #c00;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.btn-red:hover,
+.btn-red:active {
+  background-color: #fff;
+  color: #c00;
+}
