@@ -1,3 +1,7 @@
+/******************************/
+/* Navigation bar */
+/******************************/
+
 .navigation {
   height: 90px;
   position: fixed;
@@ -26,45 +30,43 @@
   font-weight: 700;
 }
 
+/******************************/
+/* Section-featured */
+/******************************/
+
 .section-featured {
   padding: 48px 0 48px 0;
-}
-
-.logos img {
-  height: 75px;
-  width: 120px;
-}
-/* section-featured  */
-.section-featured {
   background-color: #fff;
 }
 
-.marquee {
-  white-space: nowrap;
+.logos {
   overflow: hidden;
+  white-space: nowrap;
 }
 
-.marquee img {
+.logos-slide {
   display: inline-block;
-  margin-right: 20px;
-  height: 70px;
+  animation: 15s slide infinite linear;
 }
 
-@keyframes marquee {
-  100% {
+.logos-slide img {
+  height: 75px;
+  width: 120px;
+  margin: 0px 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
     transform: translateX(-100%);
   }
 }
 
-.marquee img {
-  animation: marquee 3s linear infinite;
-}
-
-.main-how {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
+/******************************/
+/* How */
+/******************************/
 
 .how-img {
   border-radius: 15px;
@@ -73,10 +75,17 @@
   min-width: 100%;
   width: 100%;
 }
+
 .comb-btn {
   display: flex;
   gap: 10px;
   margin-top: 15px;
+}
+
+.main-how {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
 .comb-btn a {
@@ -109,7 +118,9 @@
   background-color: rgb(168, 168, 181);
 }
 
-/* scholarships push  */
+/******************************/
+/* scholarships push */
+/******************************/
 
 .scholarships-img-section img {
   display: block;
@@ -130,19 +141,26 @@
 }
 
 .card img {
-  height: 142px;
+  height: 150px;
+  object-fit: contain;
 }
 
-/* .card:hover {
-  transform: rotateX(10deg) rotateY(10deg);
-} */
-
+/******************************/
 /* push-family */
+/******************************/
+
 .push-family {
   margin-top: 80px;
 }
 
+.your-element .card-body {
+  height: 148px;
+}
+
+/******************************/
 /* Our Blogs */
+/******************************/
+
 .our-blogs {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -153,7 +171,9 @@
   background-color: #3c4142;
 }
 
+/******************************/
 /* sharesection */
+/******************************/
 
 .shareSection {
   padding: 20px;
@@ -186,7 +206,9 @@ body {
   align-items: center;
 }
 
+/******************************/
 /* fixed whatapp icon on bottom right */
+/******************************/
 
 .whatsappBtn-fixed {
   font-size: 22px;

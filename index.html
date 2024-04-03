@@ -17,10 +17,15 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css files -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/general.css" />
-
-  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/queries.css">
 
 </head>
 
@@ -70,8 +75,20 @@
 
   <!-- featured-section -->
   <section class="section-featured">
-    <div class="container">
-      <div class="logos marquee">
+    <div class="logos container">
+      <div class="logos-slide">
+        <img src="./img/logo-1.jpg" alt="" />
+        <img src="./img/logo-2.jpg" alt="" />
+        <img src="./img/logo-3.jpg" alt="" />
+        <img src="./img/logo-4.jpg" alt="" />
+        <img src="./img/logo-5.jpg" alt="" />
+        <img src="./img/logo-6.jpg" alt="" />
+        <img src="./img/logo-7.jpg" alt="" />
+        <img src="./img/logo-8.jpg" alt="" />
+        <img src="./img/logo-9.jpg" alt="" />
+        <img src="./img/logo-10.jpg" alt="" />
+      </div>
+      <div class="logos-slide">
         <img src="./img/logo-1.jpg" alt="" />
         <img src="./img/logo-2.jpg" alt="" />
         <img src="./img/logo-3.jpg" alt="" />
@@ -87,59 +104,175 @@
   </section>
 
   <!--how -->
-  <section class="how mt-4">
+  <section class="how mt-5 pt-5">
     <div class="container">
-      <div class="main-how">
-        <div class="first-how">
-          <h4 class="sub-title">Multi Sport</h4>
-          <img class="how-img" width="734" height="344"
-            src="https://pushsports.in/wp-content/uploads/2024/01/multi-sports-academy.jpg" alt="" />
-          <h2 class="secondary-heading">MULTI SPORT</h2>
-          <h1 class="primary-heading">ACADEMIES</h1>
-          <p class="description">
-            World-class arenas, elite coaches, and competitive exposure with a
-            15:1 student-coach ratio, all underpinned by an advanced training
-            curriculum. A sports academy unparalleled in scope and ambition.
-          </p>
+      <div id="slider" class="owl-carousel owl-theme">
+        <div class="main-how sm-6">
+          <div class="first-how">
+            <h4 class="sub-title">Multi Sport</h4>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/01/multi-sports-academy.jpg" alt="" />
+            <h2 class="secondary-heading">MULTI SPORT</h2>
+            <h1 class="primary-heading">ACADEMIES</h1>
+            <p class="description">
+              World-class arenas, elite coaches, and competitive exposure with a
+              15:1 student-coach ratio, all underpinned by an advanced training
+              curriculum. A sports academy unparalleled in scope and ambition.
+            </p>
 
-          <div class="comb-btn">
-            <a href="https://pushsports.in/sportsarena">
-              <span class="text"> Our Arenas </span> </a><a href="https://pushsports.in/book-a-free-trial-class/">
-              <span class="text"> Demo Class </span>
-            </a>
-            <a href="https://pushsports.in/coaches/" tabindex="0">
-              <span> Our Coaches </span>
-            </a>
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a>
+              <a class="btn-red" href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+              <a class="btn-red" href="https://pushsports.in/coaches/" tabindex="0">
+                <span> Our Coaches </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
           </div>
+          <div class="second-how">
+            <h4 class="sub-title">In-school</h4>
+            <h2 class="secondary-heading">In-school</h2>
+            <h1 class="primary-heading">PROGRAMMES</h1>
+            <p class="description">
+              Adopt our holistic sports programme in line with India’s New
+              Education Policy to ensure compliance, boost admissions, and gain
+              a reputation as a forward-looking institution.
+            </p>
 
-          <div class="comb-icons">
-            <a href=""><i class="bi bi-telephone-fill"></i></a>
-            <a href=""> <i class="bi bi-whatsapp"></i></a>
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a><a class="btn-red"
+                href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/02/In-school-Programmes.jpg" alt="" />
           </div>
         </div>
-        <div class="second-how">
-          <h4 class="sub-title">In-school</h4>
-          <h2 class="secondary-heading">In-school</h2>
-          <h1 class="primary-heading">PROGRAMMES</h1>
-          <p class="description">
-            Adopt our holistic sports programme in line with India’s New
-            Education Policy to ensure compliance, boost admissions, and gain
-            a reputation as a forward-looking institution.
-          </p>
 
-          <div class="comb-btn">
-            <a href="https://pushsports.in/sportsarena">
-              <span class="text"> Our Arenas </span> </a><a href="https://pushsports.in/book-a-free-trial-class/">
-              <span class="text"> Demo Class </span>
-            </a>
-          </div>
+        <div class="main-how sm-6">
+          <div class="first-how">
+            <h4 class="sub-title">Multi Sport</h4>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/01/multi-sports-academy.jpg" alt="" />
+            <h2 class="secondary-heading">MULTI SPORT</h2>
+            <h1 class="primary-heading">ACADEMIES</h1>
+            <p class="description">
+              World-class arenas, elite coaches, and competitive exposure with a
+              15:1 student-coach ratio, all underpinned by an advanced training
+              curriculum. A sports academy unparalleled in scope and ambition.
+            </p>
 
-          <div class="comb-icons">
-            <a href=""><i class="bi bi-telephone-fill"></i></a>
-            <a href=""> <i class="bi bi-whatsapp"></i></a>
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a>
+              <a class="btn-red" href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+              <a class="btn-red" href="https://pushsports.in/coaches/" tabindex="0">
+                <span> Our Coaches </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
           </div>
-          <img class="how-img" width="734" height="344"
-            src="https://pushsports.in/wp-content/uploads/2024/02/In-school-Programmes.jpg" alt="" />
+          <div class="second-how">
+            <h4 class="sub-title">In-school</h4>
+            <h2 class="secondary-heading">In-school</h2>
+            <h1 class="primary-heading">PROGRAMMES</h1>
+            <p class="description">
+              Adopt our holistic sports programme in line with India’s New
+              Education Policy to ensure compliance, boost admissions, and gain
+              a reputation as a forward-looking institution.
+            </p>
+
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a><a class="btn-red"
+                href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/02/In-school-Programmes.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="main-how sm-6">
+          <div class="first-how">
+            <h4 class="sub-title">Multi Sport</h4>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/01/multi-sports-academy.jpg" alt="" />
+            <h2 class="secondary-heading">MULTI SPORT</h2>
+            <h1 class="primary-heading">ACADEMIES</h1>
+            <p class="description">
+              World-class arenas, elite coaches, and competitive exposure with a
+              15:1 student-coach ratio, all underpinned by an advanced training
+              curriculum. A sports academy unparalleled in scope and ambition.
+            </p>
+
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a>
+              <a class="btn-red" href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+              <a class="btn-red" href="https://pushsports.in/coaches/" tabindex="0">
+                <span> Our Coaches </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="second-how">
+            <h4 class="sub-title">In-school</h4>
+            <h2 class="secondary-heading">In-school</h2>
+            <h1 class="primary-heading">PROGRAMMES</h1>
+            <p class="description">
+              Adopt our holistic sports programme in line with India’s New
+              Education Policy to ensure compliance, boost admissions, and gain
+              a reputation as a forward-looking institution.
+            </p>
+
+            <div class="d-flex gap-2">
+              <a class="btn-red" href="https://pushsports.in/sportsarena">
+                <span class="text"> Our Arenas </span> </a><a class="btn-red"
+                href="https://pushsports.in/book-a-free-trial-class/">
+                <span class="text"> Demo Class </span>
+              </a>
+            </div>
+
+            <div class="comb-icons">
+              <a href=""><i class="bi bi-telephone-fill"></i></a>
+              <a href=""> <i class="bi bi-whatsapp"></i></a>
+            </div>
+            <img class="how-img" width="734" height="344"
+              src="https://pushsports.in/wp-content/uploads/2024/02/In-school-Programmes.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -365,49 +498,49 @@
         </div>
       </div>
 
-        <div class="row">
-          <!-- First Card -->
-          <div class="col-lg-4 mb-4">
-            <div class="card your-element" data-tilt data-tilt-reverse="true">
-              <div class="card-body d-flex align-items-center">
-                <div>
-                  <h5 class="card-title secondary-heading">Karate</h5>
-                  <p class="card-text sub-title">centers</p>
-                </div>
-                <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/karate-1.png"
-                  class="card-img-top ml-auto" alt="Cricket Image">
+      <div class="row">
+        <!-- First Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
+            <div class="card-body d-flex align-items-center">
+              <div>
+                <h5 class="card-title secondary-heading">Karate</h5>
+                <p class="card-text sub-title">centers</p>
               </div>
+              <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/karate-1.png"
+                class="card-img-top ml-auto" alt="Cricket Image">
             </div>
           </div>
+        </div>
 
-          <!-- Second Card -->
-          <div class="col-lg-4 mb-4">
-            <div class="card your-element" data-tilt data-tilt-reverse="true">
-              <div class="card-body d-flex align-items-center">
-                <div>
-                  <h5 class="card-title secondary-heading">Skating</h5>
-                  <p class="card-text sub-title">Centers</p>
-                </div>
-                <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/skating-2.png"
-                  class="card-img-top ml-auto" alt="Image 2">
+        <!-- Second Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
+            <div class="card-body d-flex align-items-center">
+              <div>
+                <h5 class="card-title secondary-heading">Skating</h5>
+                <p class="card-text sub-title">Centers</p>
               </div>
+              <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/skating-2.png"
+                class="card-img-top ml-auto" alt="Image 2">
             </div>
           </div>
+        </div>
 
-          <!-- Third Card -->
-          <div class="col-lg-4 mb-4">
-            <div class="card your-element" data-tilt data-tilt-reverse="true">
-              <div class="card-body d-flex align-items-center">
-                <div>
-                  <h5 class="card-title secondary-heading">Taekwondo</h5>
-                  <p class="card-text sub-title">centers</p>
-                </div>
-                <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/Taekwondo-1.png"
-                  class="card-img-top ml-auto" alt="Image 3">
+        <!-- Third Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card your-element" data-tilt data-tilt-reverse="true">
+            <div class="card-body d-flex align-items-center">
+              <div>
+                <h5 class="card-title secondary-heading">Taekwondo</h5>
+                <p class="card-text sub-title">centers</p>
               </div>
+              <img width="207" height="160" src="https://pushsports.in/wp-content/uploads/2024/02/Taekwondo-1.png"
+                class="card-img-top ml-auto" alt="Image 3">
             </div>
           </div>
-  
+        </div>
+
 
         <!-- Second Row -->
         <div class="row">
@@ -439,37 +572,37 @@
       </div>
 
 
-        <div class="heading-sec" data-aos="fade-up">
-          <h1 class="primary-heading text-center">Best Coaches & curriculum</h1>
-          <p class="subheading text-center">Elite Coaches deliver our structured curriculum from beginner to
-            Professional level.</p>
-          <hr class="underline">
-        </div>
+      <div class="heading-sec" data-aos="fade-up">
+        <h1 class="primary-heading text-center">Best Coaches & curriculum</h1>
+        <p class="subheading text-center">Elite Coaches deliver our structured curriculum from beginner to
+          Professional level.</p>
+        <hr class="underline">
+      </div>
 
-          <div class="heading-sec" data-aos="fade-up">
-            <h1 class="primary-heading text-center">Gamified Assessment Tools</h1>
-            <p class="subheading text-center">Motivate athletes to perform better with our gamification tools.</p>
-            <hr class="underline">
-          </div>
+      <div class="heading-sec" data-aos="fade-up">
+        <h1 class="primary-heading text-center">Gamified Assessment Tools</h1>
+        <p class="subheading text-center">Motivate athletes to perform better with our gamification tools.</p>
+        <hr class="underline">
+      </div>
 
-            <div class="heading-sec" data-aos="fade-up">
-              <h1 class="primary-heading text-center">Scholarships and Support</h1>
-              <p class="subheading text-center">Get financial and mentorship support to achieve your best.</p>
-              <hr class="underline">
-            </div>
+      <div class="heading-sec" data-aos="fade-up">
+        <h1 class="primary-heading text-center">Scholarships and Support</h1>
+        <p class="subheading text-center">Get financial and mentorship support to achieve your best.</p>
+        <hr class="underline">
+      </div>
 
-              <div class="heading-sec" data-aos="fade-up">
-                <h1 class="primary-heading text-center">Maximum Competitive Exposure </h1>
-                <p class="subheading text-center">Experience competition to beat competition.</p>
-                <hr class="underline">
-              </div>
+      <div class="heading-sec" data-aos="fade-up">
+        <h1 class="primary-heading text-center">Maximum Competitive Exposure </h1>
+        <p class="subheading text-center">Experience competition to beat competition.</p>
+        <hr class="underline">
+      </div>
 
-              <div class="heading-sec" data-aos="fade-up">
-                <h1 class="primary-heading text-center">Make a career</h1>
-                <p class="subheading text-center mb-4">Find apprenticeship and long-term employment opportunities with
-                  and after your sports career.</p>
-              </div>
-            </div>
+      <div class="heading-sec" data-aos="fade-up">
+        <h1 class="primary-heading text-center">Make a career</h1>
+        <p class="subheading text-center mb-4">Find apprenticeship and long-term employment opportunities with
+          and after your sports career.</p>
+      </div>
+    </div>
   </section>
 
   <!-- PUsh family -->
@@ -483,8 +616,10 @@
       <div class="row">
         <!-- First Column -->
         <div class="col-md-4">
-          <div class="text-center mb-4">
-            <img src="https://pushsports.in/wp-content/uploads/2024/02/career.jpg" class="img-fluid" alt="Image 1">
+          <div class="text-center mb-4 ">
+            <div class="your-element" data-tilt data-tilt-reverse="true">
+              <img  src="https://pushsports.in/wp-content/uploads/2024/02/career.jpg" class="img-fluid" alt="Image 1">
+            </div>
             <h5 class="mt-3 secondary-heading">
               Careers at Push </h5>
             <a class="btn-red" href="#">Learn More</a>
@@ -494,20 +629,24 @@
         <!-- Second Column -->
         <div class="col-md-4">
           <div class="text-center mb-4">
+            <div class="your-element" data-tilt data-tilt-reverse="true">
             <img src="https://pushsports.in/wp-content/uploads/2024/02/franchise.jpg" class="img-fluid" alt="Image 2">
+          </div>
             <h5 class="mt-3 secondary-heading">
               Franchise </h5>
-            <button class="btn btn-danger">Learn More</button>
-          </div>
+            <a class="btn-red" href="#">Learn More</a>
         </div>
+      </div>
 
         <!-- Third Column -->
         <div class="col-md-4">
           <div class="text-center mb-4">
+            <div  < class="your-element" data-tilt data-tilt-reverse="true">
             <img src="https://pushsports.in/wp-content/uploads/2024/02/partnership.jpg" class="img-fluid" alt="Image 3">
+          </div>
             <h5 class="mt-3 secondary-heading">
               Partnerships </h5>
-            <button class="btn btn-danger">Learn More</button>
+            <a class="btn-red" href="#">Learn More</a>
           </div>
         </div>
       </div>
@@ -523,7 +662,9 @@
         <!-- First Column -->
         <div class="col-md-4">
           <div class="card text-center blog-card">
-            <img src="https://pushsports.in/wp-content/uploads/2024/01/EPDM.jpeg" class="card-img-top" alt="Image 1">
+            <img src="https://pushsports.in/wp-content/uploads/2024/01/EPDM.jpeg" class="card-img-top" alt="Image 1"
+              style="width: 100%; height: auto;">
+
             <div class="card-body">
               <h5 class="card-title heading">Kids Play Area EPDM Flooring</h5>
               <p class="card-text">EPDM (Ethylene Propylene Diene Monomer) is a synthetic rubber material that is…</p>
@@ -535,7 +676,8 @@
         <div class="col-md-4">
           <div class="card text-center blog-card">
             <img src="https://pushsports.in/wp-content/uploads/2024/01/Rubber-flooring.jpeg" class="card-img-top"
-              alt="Image 2">
+              alt="Image 1" style="width: 100%; height: auto;">
+
             <div class="card-body">
               <h5 class="card-title">Kids Play Area Rubber Flooring</h5>
               <p class="card-text">Rubber flooring, such as interlocking rubber tiles, is popular for outdoor play…</p>
@@ -546,7 +688,8 @@
         <!-- Third Column -->
         <div class="col-md-4">
           <div class="card text-center blog-card">
-            <img src="https://pushsports.in/wp-content/uploads/2024/01/pp-image.jpg" class="card-img-top" alt="Image 3">
+            <img src="https://pushsports.in/wp-content/uploads/2024/01/pp-image.jpg" class="card-img-top" alt="Image 1"
+              style="width: 100%; height: auto;">
             <div class="card-body">
               <h5 class="card-title">PP Tiles Sports Surface For The Modern..</h5>
               <p class="card-text">PP interlocking tiles are a type of modular sports flooring made of…</p>
@@ -556,7 +699,7 @@
       </div>
 
       <div class="text-center mt-4">
-        <button class="btn btn-danger">Learn More</button>
+        <a class="btn-red" href="#">Learn More</a>
       </div>
     </div>
 
@@ -632,7 +775,7 @@
 
         <div class="col-md-3 mb-3">
           <!-- Content for the fourth column in the first row -->
-          <p class="subheading">Push Player League</p>
+          <p class="description">Push Player League</p>
           <p class="footer-para m-0">Push Academy Cricket League</p>
           <p class="footer-para m-0">Junior Premier League</p>
           <p class="footer-para m-0 mb-0">Competitive Games</p>
@@ -674,9 +817,12 @@
             Privacy Policy</p>
           <p class="footer-para m-0">Shipping & Other T&C</p>
           <p class="footer-para m-0">Cancellation & Refund Policy</p>
+          <p class="description mt-4"> Follow Us</p>
         </div>
         <div class="col-md-3 mb-3">
           <!-- Content for the fourth column in the second row -->
+          <p class="description mt-4">Social Media Post</p>
+
         </div>
       </div>
 
@@ -685,12 +831,9 @@
   </div>
   </footer>
 
-
   <div class="col-auto ">
     <a class="whatsappBtn-fixed" href="#" class="icon"><i class="bi bi-whatsapp"></i></a>
   </div>
-
-
 
   <!-- coypright -->
   <div class="copy-push-outer" style="background-color: #000; padding:20px 0; border-top:1px solid #fff;">
@@ -706,27 +849,56 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 
-    <!-- atropos -->
-    <script type="text/javascript" src="./vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll(".your-element");
-            elements.forEach(function(element) {
-                VanillaTilt.init(element, {
-                    max:30,
-                    speed: 300,
-  glare: true,
-  'max-glare': 2,
-                });
-            });
+  <!-- atropos -->
+  <script type="text/javascript" src="./vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll(".your-element");
+      elements.forEach(function (element) {
+        VanillaTilt.init(element, {
+          max: 30,
+          speed: 300,
+          glare: true,
+          'max-glare': 2,
         });
-    </script>
+      });
+    });
+  </script>
 
-    <!-- aos -->
+  <!-- aos -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
+  <!-- owl-carosuel -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $('#slider').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+          loop: true,
+        }
+      }
+    })
+  </script>
+
+  <!-- custom js -->
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>
