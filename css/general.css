@@ -113,3 +113,9 @@ body {
 .owl-next {
   right: -50px;
 }
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: #000;
+  text-decoration: none;
+}

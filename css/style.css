@@ -46,7 +46,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: 15s slide infinite linear;
+  animation: 30s slide infinite linear;
 }
 
 .logos-slide img {
@@ -226,4 +226,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99999;
 }

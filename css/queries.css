@@ -1,2 +1,151 @@
+@media (max-width: 2560px) {
+  .main-banner-img img {
+    min-width: 100%;
+  }
+}
+
+/* 1024 laptop size */
 @media (max-width: 1024px) {
+  .main-banner-img img {
+    padding-top: 45px;
+  }
+
+  .navigation {
+    height: 65px;
+  }
+
+  .scholar-1 {
+    height: 400px;
+  }
+
+  .scholar-5 {
+    height: 260px;
+  }
+
+  .btn-red,
+  .btn-red:visited,
+  .btn-red:link {
+    font-size: 17px;
+  }
+
+  .primary-heading {
+    font-size: 70px;
+  }
+
+  .secondary-heading {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* 768px tablet size */
+@media (max-width: 768px) {
+  .navigation {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      rgba(23, 26, 38, 0.0001)
+    );
+  }
+
+  .logos-slide img {
+    height: 40px;
+    width: 100px;
+    margin: 0px 40px;
+  }
+
+  .section-featured {
+    padding: 25px 0 25px 0;
+  }
+
+  .how {
+    margin: 35px;
+  }
+
+  .owl-prev span,
+  .owl-next span {
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .scholar-1 {
+    height: 290px;
+  }
+
+  .scholar-5 {
+    height: 188px;
+  }
+
+  .infra-projects img {
+    height: 290px;
+    width: 324px;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-collapse {
+    background-color: #edf2ff;
+  }
+
+  .btn-red,
+  .btn-red:visited,
+  .btn-red:link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #c00;
+    padding: 11px 8px;
+    color: #fff;
+  }
+}
+
+/* 425px tablet size */
+
+@media (max-width: 435px) {
+  .main-how {
+    grid-template-columns: 2fr;
+  }
+
+  .infra-projects img {
+    height: 290px;
+    width: 100%;
+  }
+
+  .how-img {
+    max-height: 150px;
+  }
+
+  .scholar-1,
+  .scholar-3,
+  .scholar-4 {
+    margin-bottom: 20px;
+  }
+
+  .scholar-5 {
+    height: 286px;
+  }
+
+  .padding-left {
+    padding-left: 17px;
+  }
 }
