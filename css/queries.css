@@ -10,8 +10,8 @@
     padding-top: 45px;
   }
 
-  .navigation {
-    height: 65px;
+  .main-banner-img img {
+    padding-top: 0px;
   }
 
   .scholar-1 {
@@ -44,18 +44,69 @@
 
 /* 768px tablet size */
 @media (max-width: 768px) {
-  .navigation {
-    height: 70px;
-    position: fixed;
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .main-banner-img img {
+    padding-top: 0px;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 20px;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    z-index: 9999;
-    background-image: linear-gradient(
-      to bottom,
-      #ffffff,
-      rgba(23, 26, 38, 0.0001)
-    );
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1)  Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard  */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .btn-mobile-nav {
+    display: block;
   }
 
   .logos-slide img {
@@ -92,18 +143,6 @@
     width: 324px;
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
-  }
-
-  .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-  .navbar-collapse {
-    background-color: #edf2ff;
-  }
-
   .btn-red,
   .btn-red:visited,
   .btn-red:link {
@@ -122,6 +161,11 @@
 /* 425px tablet size */
 
 @media (max-width: 435px) {
+  .header {
+    position: inherit;
+    background-color: #fff;
+  }
+
   .main-how {
     grid-template-columns: 2fr;
   }
@@ -151,5 +195,10 @@
 
   .blog-card {
     margin-bottom: 34px;
+  }
+
+  .description {
+    font-size: 28px;
+    line-height: 1.4;
   }
 }
