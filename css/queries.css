@@ -148,4 +148,8 @@
   .padding-left {
     padding-left: 17px;
   }
+
+  .blog-card {
+    margin-bottom: 34px;
+  }
 }
